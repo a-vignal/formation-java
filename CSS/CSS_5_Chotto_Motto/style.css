@@ -1,0 +1,107 @@
+/**********
+Vous commencez votre carrière en tant qu'intégrateur web. Votre premier client est un renommé chef japonnais Daichi Sakamoto.
+Son designer japonais a prépare pour vous une maquette minimaliste, aérée et très lisible 
+vous pouvez voir son prototype dans apercu.png
+
+- La police utilisée ici - Changa - c'est une police google fonts à charger dans la balise <head>
+- La référence de la couleur jaune - #fee500
+*********/
+
+
+/* ajouter une bordure jaune autour du body 24px  */
+/* changer la police pour Changa, laisser le sans-serif comme le 2e choix */
+/* augmente la taille de police au 20px, l'interligne de 1.8 */
+body {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+    justify-content: center;
+    border: solid;
+    border-top-width: 24px;
+    border-right-width: 24px;
+    border-bottom-width: 24px;
+    border-left-width: 24px;
+    padding: 24px ;
+    border-color: yellow;
+    font-family: "Changa";
+    font-size: 20px;
+    line-height: 1.8;
+
+}
+
+/* le block contenu est centré ne dépasse pas la largeur de 720px */
+main {
+    display: flex;
+	flex-direction: column;
+	align-items:center;
+    max-width: 720px; 
+    object-fit: contain;
+    
+}
+
+.intro-image {
+    
+    box-shadow: 10px 10px 2px 1px yellow;
+}
+/* les images ne dépassent pas l'écran */
+img {
+    object-fit: contain;
+    max-width: 720px;
+}
+/* centrer les éléments de la partie header 
+header {
+}
+*/
+/* titre h2 centré */
+h2 {
+    align-content:center;  
+}
+
+/* les éléments dans le footer centrée
+footer {
+} */
+
+/* taille de police plus grande (32px) dans le paragraphe intro, centré */
+.intro {
+    font-size: 32px;
+    align-items:center;
+}
+
+
+/* la liste sans bullets */
+/* pas de marge ni de padding */
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+	flex-direction: row;
+	align-items:center;
+    margin: 0;
+    padding: 0;
+}
+
+/* les éléments de la liste affichés dans une ligne */
+nav li {
+    align-items:center;
+    margin: 5px;
+    outline: none;
+    display: inline-block;
+}
+
+
+/* les liens dans la partie navigation en miniscules, couleur noir */
+/* espacés de 12px */
+nav a {
+    outline: none;
+    text-decoration: none;
+    margin-right: 12px;
+    text-align: center;
+    color: black;
+    padding: 4px 12px 4px 12px;
+    
+}
+
+/* le lien dans la partie navigation en survol devient jaune  */
+nav a:hover {
+    background: yellow;
+}
